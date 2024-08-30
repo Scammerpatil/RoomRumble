@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Here's a `README.md` file for the **RoomRumble** project:
+
+````markdown
+# RoomRumble
+
+**RoomRumble** is a multiplayer stone-paper-scissors game built with Next.js. Players can create rooms, join by entering a room number and passcode, and play against each other in real-time. Each room can accommodate up to 10 players.
+
+## Features
+
+- **Room Creation**: Users can create a unique room with a passcode.
+- **Room Joining**: Other players can join the room using the room number and passcode.
+- **Real-Time Gameplay**: Players can play stone-paper-scissors against others in the room.
+- **Room Capacity**: Each room can hold up to 10 players.
+
+## Tech Stack
+
+- **Frontend**: Next.js, React
+- **Backend**: Next.js API Routes
+- **Real-Time Communication**: Socket.IO (to be implemented)
+- **Styling**: Tailwind CSS (optional)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (>= 14.x)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/roomrumble.git
+   cd roomrumble
+   ```
+````
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+To start the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To build the application for production, run:
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+├── components
+│   ├── CreateRoom.js         # Component for creating a new room
+│   ├── JoinRoom.js           # Component for joining an existing room
+│   ├── Game.js               # Component for the stone-paper-scissors game logic
+├── pages
+│   ├── api
+│   │   ├── create-room.js    # API route for creating a new room
+│   │   ├── join-room.js      # API route for joining a room
+│   ├── index.js              # Main page rendering the game and room management
+├── public                    # Static assets (images, icons, etc.)
+├── styles                    # Global styles or CSS modules
+├── README.md                 # Project documentation
+└── package.json              # Project metadata and dependencies
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future Enhancements
 
-## Deploy on Vercel
+- **Real-Time Communication**: Implement Socket.IO for real-time gameplay and player interaction.
+- **Room Persistence**: Use a database to persist rooms and player data.
+- **Player Avatars**: Add custom avatars for players.
+- **Game History**: Track and display the history of games played within a room.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Please fork this repository and submit a pull request if you'd like to contribute.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+**RoomRumble** - Challenge your friends and see who’s the ultimate stone-paper-scissors champion!
+
+```
+
+This `README.md` file provides a clear and concise overview of the project, including setup instructions, project structure, and future enhancement ideas. Feel free to modify it to fit your specific needs.
+```
