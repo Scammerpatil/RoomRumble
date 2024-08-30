@@ -1,4 +1,3 @@
-````markdown
 # RoomRumble
 
 RoomRumble is a real-time, multiplayer stone-paper-scissors game built with Next.js. Players can create rooms, join existing rooms using a room number and passcode, and play against each other. Each room can host up to 10 players.
@@ -31,6 +30,7 @@ To run RoomRumble locally, follow these steps:
    git clone https://github.com/your-username/roomrumble.git
    cd roomrumble
    ```
+
 ````
 
 2. Install dependencies:
@@ -118,3 +118,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 You can customize the `README.md` further based on specific details or requirements for the RoomRumble project.
 ```
+````
